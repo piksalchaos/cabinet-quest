@@ -1,4 +1,34 @@
+:root {
+  --background-color: #25202b;
+  --foreground-color: #daccff;
+}
+
 body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+#cabinet {
   width: 800px;
+  height: 2344px;
+  background-image: url("/images/cabinet-quest.png");
+  background-size: cover;
   margin: auto;
+  text-align: center;
+}
+
+#cabinet-top {
+  height: 20%;
+}
+#cabinet-screen {
+  height: 21%;
+}
+#cabinet-controls-top {
+  height: 6%;
+}
+#cabinet-controls-bottom {
+  height: 9%;
+}
+#cabinet-bottom {
+  height: 44%;
 }
