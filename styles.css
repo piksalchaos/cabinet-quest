@@ -54,9 +54,16 @@ body {
 
 #cabinet-bottom {
   flex-grow: 1;
+  box-sizing: border-box;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  img {
+    display: block;
+    margin: auto;
+    height: 160px;
+  }
 }
 
 #game {
@@ -144,6 +151,17 @@ body {
   height: 100%;
 }
 
+.link-button-bottom {
+  border: 6px solid var(--foreground-color);
+  border-radius: 24px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
 .hover-shadow {
   position: relative;
   left: 0;
@@ -163,6 +181,13 @@ body {
 
 a {
   color: var(--foreground-color);
+}
+
+hr {
+  border-style: dashed none none none;
+  border-width: 6px;
+  border-color: var(--foreground-color);
+  margin: 2rem 0;
 }
 
 @media (max-width: 1350px) {
